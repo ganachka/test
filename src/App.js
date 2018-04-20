@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import Languages from 'components/Languages';
 
-class App extends Component {
+
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Languages />
+      <div className="App" data-cy="test-app">
+        Hello World!
       </div>
     );
   }
 }
-
-export default App;
