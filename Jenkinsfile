@@ -13,9 +13,9 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                sh 'mkdir /tmp/.X11-unix'
-                sh 'sudo chmod 1777/tmp/.X11-unix'
-                sh 'sudo chown root /tmp/.X11-unix/'
+//                sh 'mkdir /tmp/.X11-unix'
+//                sh 'sudo chmod 1777/tmp/.X11-unix'
+//                sh 'sudo chown root /tmp/.X11-unix/'
                 sh 'npm run test:system' 
             }
         }        
