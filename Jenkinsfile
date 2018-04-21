@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'cypress/base'
+            image 'cypress/browsers'
             args '-u root:sudo -v $HOME/workspace/test-jenkins-github-2:/test-jenkins-github-2'
         }
     }
