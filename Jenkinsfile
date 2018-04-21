@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'cypress/base:ubuntu16'
+            image 'cypress/base'
             args '-u root:sudo -v $HOME/workspace/test-jenkins-github-2:/test-jenkins-github-2'
         }
     }
@@ -9,7 +9,6 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'cypress --version'
                 sh 'npm install' 
             }
         }
