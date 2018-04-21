@@ -7,7 +7,6 @@ pipeline {
     }
     environment { 
         HOME="."
-        DISPLAY=":99"
     }
     stages {
         stage('Build') { 
