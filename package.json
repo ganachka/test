@@ -60,7 +60,7 @@
     "test": "node scripts/test.js --env=jsdom",
     "test-e2e": "sleep 5 && npm run cypress:run",
     "cypress:open": "cypress open",
-    "cypress:run": "DEBUG=cypress:launcher cypress run",
+    "cypress:run": "DEBUG=cypress:* cypress run",
     "serve": "pushstate-server build",
     "test:system": "npm-run-all build -p -r serve test-e2e"
   },
