@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'cypress/base:6'
+            image 'cypress/base:ubuntu16'
         }
     }
     environment { HOME="." }
