@@ -9,6 +9,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
+                sh 'cypress --version'
                 sh 'npm install' 
             }
         }
