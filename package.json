@@ -62,7 +62,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "DEBUG=cypress:* cypress run",
     "serve": "pushstate-server build",
-    "test:system": "npm-run-all build -p -r serve test-e2e"
+    "test:system": "npm run test-e2e"
   },
   "jest": {
     "collectCoverageFrom": [
