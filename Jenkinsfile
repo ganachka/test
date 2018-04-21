@@ -5,10 +5,14 @@ pipeline {
             args '-u root:sudo -v $HOME/workspace/test-jenkins-github-2:/test-jenkins-github-2'
         }
     }
-    environment { HOME="." }
+    environment { 
+        HOME="."
+        CI='true'
+    }
     stages {
         stage('Build') { 
             steps {
+                sh 'echo building...'
 //                sh 'npm install' 
             }
         }
