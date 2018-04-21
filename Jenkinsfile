@@ -2,6 +2,7 @@ pipeline {
     agent {
         docker {
             image 'cypress/base:ubuntu16'
+            args '-u root:sudo -v $HOME/workspace/test-jenkins-github-2:/test-jenkins-github-2'
         }
     }
     environment { HOME="." }
