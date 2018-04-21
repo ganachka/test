@@ -13,7 +13,7 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'echo building...'
-//                sh 'npm install' 
+                sh 'npm install' 
             }
         }
         stage('Test') { 
